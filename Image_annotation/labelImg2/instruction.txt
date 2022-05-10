@@ -1,0 +1,6 @@
+annotate rotatied object
+
+press E to create rotBbox
+press right click on the bbox edge to rotate it 
+
+it wil, save the annotation as XML (Pascal VOC)

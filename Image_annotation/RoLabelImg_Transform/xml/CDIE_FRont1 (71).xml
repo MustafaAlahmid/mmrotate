@@ -1,0 +1,28 @@
+<annotation>
+	<folder>roData</folder>
+	<filename>CDIE_FRont1 (71).jpg</filename>
+	<path>D:\roData\CDIE_FRont1 (71).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1960</width>
+		<height>4032</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>CDIE_front</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>872.4763</cx>
+			<cy>2017.6162</cy>
+			<w>2015.3401</w>
+			<h>1246.6662</h>
+			<angle>1.542922</angle>
+		</robndbox>
+		<extra/>
+	</object>
+</annotation>

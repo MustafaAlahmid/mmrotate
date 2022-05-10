@@ -18,7 +18,7 @@ from mmdet.apis import init_random_seed, set_random_seed
 from mmrotate.apis import train_detector
 from mmrotate.datasets import build_dataset
 from mmrotate.models import build_detector
-from mmrotate.utils import collect_env, get_root_logger
+from mmrotate.utils import collect_env, get_root_logger, setup_multi_processes
 
 
 def parse_args():
@@ -85,6 +85,10 @@ def main():
     cfg = Config.fromfile(args.config)
     if args.cfg_options is not None:
         cfg.merge_from_dict(args.cfg_options)
+
+    # set multi-process settings
+    setup_multi_processes(cfg)
+    cfg.runner.max_epochs = 100
     # set cudnn_benchmark
     if cfg.get('cudnn_benchmark', False):
         torch.backends.cudnn.benchmark = True
@@ -173,6 +177,7 @@ def main():
             mmdet_version=__version__ + get_git_hash()[:7],
             CLASSES=datasets[0].CLASSES)
     # add an attribute for visualization convenience
+
     model.CLASSES = datasets[0].CLASSES
     train_detector(
         model,

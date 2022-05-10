@@ -1,0 +1,25 @@
+Create dataset 
+
+in the test path : data/split_ms_dota/test/annfiles
+	           data/split_ms_dota/test/images
+
+in the train path : data/split_ms_dota/trainval/annfiles
+		    data/split_ms_dota/trainval/images
+
+
+
+Create costum_config_file.py
+
+python tools/train.py D:/mmlab/mmrotate-main/configs/my_custom_config.py 
+
+
+to pretrain yuse this and change the *.path 
+
+python tools/train.py my_custom_config.py --resume-from pretrained_model_path.pth
+
+additional args: 
+resume-from checkpoint_path
+
+inside the train.py 
+line 91 : set the number of epochs 
+

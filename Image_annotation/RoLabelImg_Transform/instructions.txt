@@ -1,0 +1,3 @@
+to convert from XMl annotation to Dota .txt annotation 
+1- python get_list.py
+2- python xml_to_txt

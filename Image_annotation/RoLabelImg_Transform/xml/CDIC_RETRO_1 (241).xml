@@ -1,0 +1,28 @@
+<annotation>
+	<folder>roData</folder>
+	<filename>CDIC_RETRO_1 (241).jpg</filename>
+	<path>D:\roData\CDIC_RETRO_1 (241).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4032</width>
+		<height>1960</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>CDIC_retro</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>1873.0297</cx>
+			<cy>973.6219</cy>
+			<w>1500.7522</w>
+			<h>968.9438</h>
+			<angle>6.185574</angle>
+		</robndbox>
+		<extra/>
+	</object>
+</annotation>
